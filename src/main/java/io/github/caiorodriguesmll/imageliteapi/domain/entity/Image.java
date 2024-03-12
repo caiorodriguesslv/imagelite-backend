@@ -37,5 +37,8 @@ public class Image {
     @Lob //Save files in DataBase!
     private byte[] file;
 
+    public String getFileName() {
+        return getName().concat(".").concat(getExtension().name());
+    }
 
 }
